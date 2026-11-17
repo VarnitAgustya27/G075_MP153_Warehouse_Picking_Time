@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MLflow artifacts (mlflow.db is committed, artifacts can be ignored)
+mlruns/
+mlartifacts/
+
+# DVC tracked files & legacy raw root data (only data/raw/holdout_features.csv is in git)
+/data/*.csv
+/data/raw/train.csv
+/data/raw/later.csv
+
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+data:
+  raw_train_path: "data/raw/train.csv"
+  raw_later_path: "data/raw/later.csv"
+  holdout_features_path: "data/raw/holdout_features.csv"
+  holdout_predictions_path: "predictions/holdout_predictions.csv"
+  findings_path: "reports/findings.yaml"
+
+model:
+  experiment_name: "mp153_picking_time"
+  registered_model_name: "mp153_picking_predictor"
+  target_column: "pick_seconds"
+  leak_column: "pick_time_from_scanner"
+  random_state: 42
+  test_size: 0.2
+
+service:
+  max_aisle_distance_m: 700.0
+  min_shelf_height_m: 0.0
+  host: "0.0.0.0"
+  port: 8000
